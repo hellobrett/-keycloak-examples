@@ -3,6 +3,7 @@ services:
   keycloak:
     env_file: .env
     build:
+      context: .
       dockerfile: Dockerfile-keycloak
     ports:
      - "8080:8080"
