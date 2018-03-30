@@ -22,7 +22,7 @@ RUN mv apache-maven-3.5.3  /usr/local/apache-maven
 WORKDIR /opt/jboss
 USER jboss
 COPY --chown=jboss:jboss _srv/keycloak-demo-3.4.3.Final ./_srv/keycloak-demo-3.4.3.Final
-WORKDIR _srv/keycloak-demo-3.4.3.Final/examples/authz/photoz
+WORKDIR _srv/keycloak-demo-3.4.3.Final/examples
 RUN mvn -U clean install
 WORKDIR /opt/jboss
 
