@@ -15,4 +15,4 @@ services:
       - KEYCLOAK_VERSION=3.4.3.Final
 #    TO DO: Why does this command not work?  It works from inside the container...
 #    command: "/opt/jboss/wildfly/bin/add-user.sh -u ${KEYCLOAK_USER} -p ${KEYCLOAK_PASSWORD}"
-    entrypoint: "/opt/jboss/wildfly/bin/standalone.sh -bmanagement 0.0.0.0"
+    entrypoint: "/opt/jboss/wildfly/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0"
